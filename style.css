@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Open Sans", serif;
+  background-color: #222;
+  color: #fff;
+}
+
+
+/* start container */
+
+.container{
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* small screen */
+@media (min-width: 768px){
+  .container{
+    width: 750px;
+  }
+}
+/* medium screen */
+@media (min-width: 992px){
+  .container{
+    width: 970px;
+  }
+}
+/* large screen */
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+
+/* end container */
+
+
+.crud{
+  width: 100%;
+}
+.crud .head{
+  text-align: center; 
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+.crud .inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .crud .inputs  */
+input{
+  width: 100%;
+  height: 30px;
+  margin: 4px;
+  padding: 4px 10px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* .crud .inputs */
+input:focus{
+  background-color: #000;
+  transform: scalex(1.02);
+}
+.crud .inputs .price{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.crud .inputs .price input{
+  width: 20%;
+}
+.crud .inputs .price span#total{
+  background-color: #901717;
+  padding: 4px;
+  border-radius: 8px;
+  display: flex;
+  gap: 5px;
+}
+.crud .inputs .price span#total::before{
+  content: 'total: ';
+  text-transform: capitalize;
+  font-weight: 600;
+}
+button{
+  width: 60%;
+  padding: 8px 0;
+  margin: 5px 0;
+  color: #fff;
+  background-color: #311B92;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+button:hover{
+  background-color: #4a148c;
+  width: 62%;
+  letter-spacing: 1px;
+}
+
+
+
+.crud .outputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.crud .outputs .searchBlock{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.crud .outputs .searchBlock .btnSearch{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.crud .outputs .searchBlock .btnSearch button{
+  width: 40%;
+}
+#deleteAll{
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.container:last-of-type{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table{
+  width: 80%;
+  text-align: center;
+  margin: 10px 0;
+}
+table th{
+  text-transform: uppercase;
+}
+th, td{
+  padding: 5px;
+}
+table button{
+  width: 100%;
+}
+table button:hover{
+  width: 100%;
+}
+
+/* phone screen */
+@media (max-width: 768px) {
+
+  table {
+    font-size: 9px; 
+  }
+  table button{
+    font-size: 9px;
+  }
+}
